@@ -1,3 +1,5 @@
+import Foundation
+
 class Circle {
     private let radius: Double
     
@@ -6,7 +8,7 @@ class Circle {
     }
     
     func area() -> Double {
-        return self.radius * self.radius * 3.14
+        return pow(self.radius, 2) * Double.pi
     }
 }
 
