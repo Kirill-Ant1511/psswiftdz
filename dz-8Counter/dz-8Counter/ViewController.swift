@@ -31,12 +31,12 @@ class ViewController: UIViewController {
         
     }
 
-
+    // Оутлеты для обращения к элементам холста
     @IBOutlet var Background: UIView!
     @IBOutlet weak var Counter: UILabel!
     @IBOutlet weak var NameProgram: UILabel!
     
-    
+    // Функции обработки нажатия кнопок
     @IBAction func plusCounter(_ sender: Any) {
         count += 1
         Counter.text = String(count)
