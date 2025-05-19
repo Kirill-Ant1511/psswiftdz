@@ -56,9 +56,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="Background" destination="8bC-Xf-vdC" id="DNC-Rn-5Vl"/>
-                        <outlet property="Counter" destination="mdQ-6k-Au4" id="rx6-6j-jiz"/>
-                        <outlet property="NameProgram" destination="a1T-dY-QYC" id="JDx-rP-57B"/>
+                        <outlet property="backgroundView" destination="8bC-Xf-vdC" id="DNC-Rn-5Vl"/>
+                        <outlet property="counterLabel" destination="mdQ-6k-Au4" id="rx6-6j-jiz"/>
+                        <outlet property="nameLabel" destination="a1T-dY-QYC" id="JDx-rP-57B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

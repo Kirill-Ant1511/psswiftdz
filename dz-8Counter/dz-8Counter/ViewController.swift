@@ -8,42 +8,44 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private var count: Int = 0
+    private var count: Int = 0 {
+        didSet {
+            counterLabel.text = String(count)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        Background.backgroundColor = .lightGray
+        backgroundView.backgroundColor = .lightGray
         
-        NameProgram.text = "Counter"
-        NameProgram.textAlignment = .center
-        NameProgram.textColor = .red
-        NameProgram.backgroundColor = .systemBlue
-        NameProgram.layer.masksToBounds = true
-        NameProgram.layer.cornerRadius = 10
-        NameProgram.font = .boldSystemFont(ofSize: 30)
+        nameLabel.text = "Counter"
+        nameLabel.textAlignment = .center
+        nameLabel.textColor = .red
+        nameLabel.backgroundColor = .systemBlue
+        nameLabel.layer.masksToBounds = true
+        nameLabel.layer.cornerRadius = 10
+        nameLabel.font = .boldSystemFont(ofSize: 30)
         
-        Counter.text = String(count)
-        Counter.textColor = .blue
-        Counter.font = .boldSystemFont(ofSize: 42)
-        Counter.textAlignment = .center
+        counterLabel.text = String(count)
+        counterLabel.textColor = .blue
+        counterLabel.font = .boldSystemFont(ofSize: 42)
+        counterLabel.textAlignment = .center
         
         
     }
 
     // Оутлеты для обращения к элементам холста
-    @IBOutlet var Background: UIView!
-    @IBOutlet weak var Counter: UILabel!
-    @IBOutlet weak var NameProgram: UILabel!
+    @IBOutlet var backgroundView: UIView!
+    @IBOutlet weak var counterLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     // Функции обработки нажатия кнопок
     @IBAction func plusCounter(_ sender: Any) {
         count += 1
-        Counter.text = String(count)
     }
     
     @IBAction func minusCounter(_ sender: Any) {
         count -= 1
-        Counter.text = String(count)
     }
 }
