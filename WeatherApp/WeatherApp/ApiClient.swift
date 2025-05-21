@@ -11,7 +11,7 @@ import Alamofire
 import UIKit
 // Клиент для получения погоды с помощью Alamofire
 class ApiClient {
-    private static let API_KEY = "70954f5d011a27543fd5403c822200d1"
+    private static let API_KEY = "API_KEY"
     
     // https://api.weatherapi.com/v1/current.json?key=api_key&q=latitude,longitude ссылка для запроса к серверу
     
