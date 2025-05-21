@@ -1,0 +1,23 @@
+{
+  "originHash" : "44ef6d2bc71a7378c37065676d336ad062ec206e3b7bc65bcbc6a63f9c6b3c8e",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "swiftlocation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/SwiftLocation",
+      "state" : {
+        "revision" : "64620973d0c19043845e82eac9ac1c1442537ce1"
+      }
+    }
+  ],
+  "version" : 3
+}
